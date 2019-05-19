@@ -11,23 +11,22 @@ class Main extends React.Component{
         super(props)
         this.state={
             click:false,
-            data:''
+            dataArray:[]
         }
     }
 
     dataClick=(data)=>{
-        console.log('click')
-        console.log('data', data)
+        const dataLength = this.state.dataArray.push(data )
         this.setState({
             click:!this.state.click,
-            data:data
+            dataArray:this.state.dataArray
         })
     }
     render(){
         return(
             <Container>
                 <Row>
-                    <Col><BreadCrumb data={this.state.data}/></Col>
+                    <Col><BreadCrumb dataArray={this.state.dataArray}/></Col>
                 </Row>
             <Row>
                 <Col xs="4"><LeftMain Data={Data} onDataClick={this.dataClick}/></Col>

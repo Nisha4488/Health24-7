@@ -9,7 +9,7 @@ class BreadCrumb extends React.Component{
     render(){
         console.log('display props', this.props.data)
         return(
-            <div><h1>{this.props.data}</h1></div>
+            <div><h1>{this.props.dataArray}</h1></div>
         )
     }
 }

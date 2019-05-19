@@ -7,9 +7,10 @@ class BreadCrumb extends React.Component{
     }
     
     render(){
-        console.log('display props', this.props.data)
+        const unique = [...new Set(this.props.dataArray)]
         return(
-            <div><h1>{this.props.dataArray}</h1></div>
+            // <div><h1>{this.props.dataArray}</h1></div>
+            <h1>{unique + " , "}</h1>
         )
     }
 }

@@ -39,6 +39,6 @@
     "lint-staged": "^8.1.7"
   },
   "lint-staged": {
-    "*": "yarn prettier"
+    "*.{js,jsx}": ["prettier --single-quote --write", "git add"]
   }
 }

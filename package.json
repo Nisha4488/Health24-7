@@ -44,6 +44,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": ["prettier --single-quote --write", "git add"]
+    "*.{js,jsx}": ["yarn prettier", "git add"]
   }
 }

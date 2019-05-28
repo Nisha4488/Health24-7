@@ -1,17 +1,26 @@
-import React from 'react'
-import RightMain1 from './RightMain1'
-import RightMain2 from './RightMain2'
+import React from 'react';
+// import RightMain1 from './RightMain1'
+// import RightMain2 from './RightMain2'
 
-class LeftMain extends React.Component{
-    render(){
-        return(
-            <div>
-                <RightMain1/>
-                
-            </div>
-        )
-    }
+class RightMain extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        {this.props.ageGroup.map(age => (
+          <button
+            onClick={() => {
+              this.props.ageClick(age);
+            }}
+          >
+            {age}
+          </button>
+        ))}
+      </div>
+    );
+  }
 }
 
-
-export default LeftMain
+export default RightMain;

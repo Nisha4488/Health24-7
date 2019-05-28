@@ -10,7 +10,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem,
+} from 'reactstrap';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -18,12 +19,12 @@ export default class Header extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
   render() {
@@ -38,9 +39,11 @@ export default class Header extends React.Component {
                 <NavLink href="/components/">Dashboard</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Enrollment</NavLink>
+                <NavLink href="https://github.com/reactstrap/reactstrap">
+                  Enrollment
+                </NavLink>
               </NavItem>
-             </Nav>
+            </Nav>
           </Collapse>
         </Navbar>
       </div>

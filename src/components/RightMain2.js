@@ -1,15 +1,14 @@
-import React from 'react'
+// import React from 'react'
 
-class RightMain2 extends React.Component{
-    render(){
-        return (
-            <div>
-                <input type="button" value="Male"/>
-                <input type="button" value="Female"/>
-            </div>
-        )
-    }
-}
+// class RightMain2 extends React.Component{
+//     render(){
+//         return (
+//             <div>
+//                 <input type="button" value="Male"/>
+//                 <input type="button" value="Female"/>
+//             </div>
+//         )
+//     }
+// }
 
-
-export default RightMain2
+// export default RightMain2

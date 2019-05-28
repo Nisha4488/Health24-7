@@ -1,10 +1,9 @@
-const Data =[
-    "Age",
-    "Categories",
-    "RiskScore",
-    "Remote Monitoring Trends",
-    "PDF"
-]
+const Data = [
+  'Age',
+  'Categories',
+  'RiskScore',
+  'Remote Monitoring Trends',
+  'PDF',
+];
 
-
-export default Data
+export default Data;
